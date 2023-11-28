@@ -86,3 +86,8 @@ body {
   opacity: 70%;
   cursor: pointer;
 }
+
+.registered {
+  text-align: center;
+  line-height: 20px;
+}

@@ -18,9 +18,11 @@ body {
 }
 .title {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 50px;
   font-weight: 700;
   font-size: 2.2rem;
+  background-color: #ffffffb6;
+  border-radius: 10px;
 }
 .registro__title {
   text-align: center;
@@ -66,7 +68,7 @@ body {
 }
 
 .submit__btn {
-    color: aliceblue;
+  color: aliceblue;
   font-size: 1.5rem;
   font-weight: 700;
   display: flex;

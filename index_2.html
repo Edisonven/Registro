@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resgistro</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="input__container">
+            <h1 class="registro__title">Registra tus datos</h1>
+            <label for="input-1">Ingresa tu nombre</label>
+            <input type="text" name="input-1" required id="input-1" placeholder="Escribe tu nombre y 2 apellidos">
+            <label for="input-2">Eres Vegetariano?</label>
+            <input type="text" name="input-2" required id="input-2" placeholder="Escribe Sí/No">
+            <label for="input-3">Podrás asistir?</label>
+            <input type="text" name="input-3" required id="input-3" placeholder="Escribe Sí/No">
+        </div>
+
+        <button type="submit" id="submit__btn" class="submit__btn">Registrarme</button>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

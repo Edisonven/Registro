@@ -6,21 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resgistro</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <div class="input__container">
+        <h1 class="title">¡Bienvenidos queridos invitados!</h1>
+        <h3 class="descripcion">espero se encuentren muy bien. han igresado a nuestro sistema donde quedarán registrados
+            sus datos, sigan los
             <h1 class="registro__title">Registra tus datos</h1>
-            <label for="input-1">Ingresa tu nombre</label>
-            <input type="text" name="input-1" required id="input-1" placeholder="Escribe tu nombre y 2 apellidos">
-            <label for="input-2">Eres Vegetariano?</label>
-            <input type="text" name="input-2" required id="input-2" placeholder="Escribe Sí/No">
-            <label for="input-3">Podrás asistir?</label>
-            <input type="text" name="input-3" required id="input-3" placeholder="Escribe Sí/No">
-        </div>
-
-        <button type="submit" id="submit__btn" class="submit__btn">Registrarme</button>
+            <div class="input__container">
+                <label class="label" for="input-1">Ingresa tu nombre</label>
+                <input class="input-1" type="text" name="input-1" required id="input-1"
+                    placeholder="Escribe tu nombre y 2 apellidos">
+                <label class="label label--1" for="select-1">Eres Vegetariano?</label>
+                <select class="select-1" name="select-1" id="select-1">
+                    <option value="si">SI</option>
+                    <option value="no">NO</option>
+                </select>
+                <label class="label label--2" for="select-2">Podrás asistir?</label>
+                <select class="select-2" name="select-2" id="select-2">
+                    <option value="si">SI</option>
+                    <option value="no">NO</option>
+                </select>
+            </div>
+            <button type="submit" id="submit__btn" class="submit__btn">Registrarme</button>
     </div>
     <script src="./assets/js/script.js"></script>
 </body>

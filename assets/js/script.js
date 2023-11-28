@@ -23,7 +23,7 @@ boton.addEventListener("click", () => {
     });
     input_1.value = "";
     registrado.innerHTML = `<b>¡TE HAS REGISTRADO!</b> Después de la fiesta, nos iremos de luna de miel a Europa. si quieres 
-    aportanos para poder realizar nuestro sueño, puedes hacerlo a las siguientes cuenta
+    aportanos para poder realizar nuestro sueño, puedes hacerlo a la siguiente cuenta.
     cta. Corriente Banco ITAU: <b>210972591</b> RUT: <b>18.764.812-2</b>. También en la fiesta habrá un buzón. 
     <b>¡Te esperamos!</b>`;
   }

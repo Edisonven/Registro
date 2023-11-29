@@ -82,16 +82,47 @@
 }
 .icon {
   width: 60px;
+  transition: transform linear 0.2s;
 }
 
-.icon--location{
+.icon--location {
   padding: 5px;
   border-radius: 50%;
   border: 2px dotted var(--color-1);
 }
-.datos{
+.datos {
   font-weight: 700;
 }
-@media (min-width: 576px){
-  
+.icon__link {
+  text-decoration: none;
+  color: var(--color-1);
+}
+
+/*VERSIÓN ESCRITORIO*/
+@media (min-width: 576px) {
+  body {
+    background-image: url(../images/fondo_3.png);
+    background-size: cover;
+  }
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .container__img {
+    box-shadow: 5px 5px 5px var(--color-1), -2px -2px 2px var(--color-1);
+  }
+  .card__title {
+    padding-top: 225px;
+  }
+  .card__names {
+    font-size: 4.8rem;
+    font-weight: 500;
+  }
+  .card__title,
+  .card__subtitle {
+    font-size: 1.3rem;
+  }
+  .icon:hover {
+    transform: scale(1.2);
+  }
 }

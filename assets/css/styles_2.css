@@ -1,3 +1,6 @@
+:root {
+  --color-1: #171e42;
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -24,10 +27,12 @@ body {
   font-size: 2.2rem;
   background-color: #ffffffb6;
   border-radius: 10px;
+  color: var(--color-1);
 }
 .registro__title {
   text-align: center;
   margin: 40px 0;
+  color: var(--color-1);
 }
 .label {
   font-weight: 500;
@@ -38,6 +43,7 @@ body {
 .label--2,
 .label--1 {
   margin-top: 20px;
+  color: var(--color-1);
 }
 .descripcion {
   text-align: center;
@@ -66,8 +72,9 @@ body {
   border-radius: 10px;
   font-size: 1.2rem;
   font-weight: 700;
+  color: var(--color-1);
 }
-option{
+option {
   width: max-content;
 }
 .submit__btn {
@@ -93,6 +100,7 @@ option{
 .registered {
   text-align: center;
   line-height: 20px;
+  color: var(--color-1);
 }
 .warning {
   color: red;
@@ -101,3 +109,22 @@ option{
   margin-top: 5px;
 }
 
+/*MODO ESCROTIRIO*/
+@media (min-width: 576px) {
+  .container {
+    height: 100%;
+    max-width: 700px;
+    box-shadow: 5px 5px 5px var(--color-1), -2px -2px 2px var(--color-1);
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .descripcion {
+    margin-top: 70px;
+    font-size: 1.3rem;
+  }
+  .registered {
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+}

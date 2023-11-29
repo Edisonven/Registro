@@ -21,18 +21,22 @@
             <h1 class="registro__title">Registra tus datos</h1>
             <div class="input__container">
                 <label class="label" for="input-1">Ingresa tu nombre</label>
-                <input class="input-1" type="text" name="input-1" required id="input-1"
-                    placeholder="Escribe tu nombre y 2 apellidos">
+                <input class="input-1" type="text" name="input-1" required id="input-1" placeholder="Escribe tu nombre y 2 apellidos">
+                <p id="warning-1" class="warning"></p>
                 <label class="label label--1" for="select-1">Eres Vegetariano?</label>
                 <select class="select-1" name="select-1" id="select-1">
+                    <option value="sel">Seleccionar</option>
                     <option value="si">SI</option>
                     <option value="no">NO</option>
                 </select>
+                <p id="warning-2" class="warning"></p>
                 <label class="label label--2" for="select-2">Podrás asistir?</label>
                 <select class="select-2" name="select-2" id="select-2">
+                    <option value="sel">Seleccionar</option>
                     <option value="si">SI</option>
                     <option value="no">NO</option>
                 </select>
+                <p id="warning-3" class="warning"></p>
             </div>
             <button type="submit" id="submit__btn" class="submit__btn">Registrarme</button>
             <p class="registered" id="registered"></p>

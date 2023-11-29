@@ -1,3 +1,6 @@
+:root {
+  --color-1: #171e42;
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -5,6 +8,7 @@
 
 /*PAGINA PRINCIPAL*/
 .container {
+  min-width: 380px;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -19,10 +23,10 @@
 .card__title {
   text-align: center;
   width: 70%;
-  padding-top: 200px;
+  padding-top: 170px;
   font-family: "Roboto Slab", serif;
   margin: 0 auto;
-  color: #161a30;
+  color: var(--color-1);
 }
 .card__names {
   margin-top: 30px;
@@ -36,7 +40,33 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 30px;
-  color: #161a30;
+  color: var(--color-1);
   text-align: center;
   font-family: "Roboto Slab", serif;
+}
+.fecha__container {
+  color: var(--color-1);
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  gap: 10px;
+}
+.date--mes {
+  text-align: center;
+}
+.date--fecha {
+  font-size: 5rem;
+}
+.date--dia,
+.date--hora,
+.date--mes {
+  font-size: 1.5rem;
+}
+.date--dia,
+.date--hora{
+    border-top: 2px dotted var(--color-1);
+    border-bottom: 2px dotted var(--color-1);
 }

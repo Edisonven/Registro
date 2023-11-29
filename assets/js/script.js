@@ -12,12 +12,14 @@ boton.addEventListener("click", () => {
   let inputInvitados = input_1.value;
   let vegetariano = select_1.value;
   let asistencia = select_2.value;
-  const nombreCompleto = input_1.value.split(" ").length;
+  const nombreCompleto = input_1.value.split(" ").filter(function (n) {
+    return n != "";
+  }).length;
 
   if (inputInvitados === "") {
     warningAlert_1.innerHTML = "Debes rellenar este campo.";
-  } else if (nombreCompleto < 3) {
-    warningAlert_1.innerHTML = "Debes ingresar tu nombre y apellidos";
+  } else if (nombreCompleto < 2) {
+    warningAlert_1.innerHTML = "Debes ingresar tu nombre y apellido";
   } else if (vegetariano === "sel") {
     warningAlert_1.innerHTML = "";
     warningAlert_2.innerHTML = "selecciona una opcion";

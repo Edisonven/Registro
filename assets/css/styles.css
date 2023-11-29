@@ -31,7 +31,7 @@
 .card__names {
   margin-top: 30px;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: "Dancing Script", cursive;
   color: #daa520;
   font-weight: 100;
@@ -66,7 +66,32 @@
   font-size: 1.5rem;
 }
 .date--dia,
-.date--hora{
-    border-top: 2px dotted var(--color-1);
-    border-bottom: 2px dotted var(--color-1);
+.date--hora {
+  border-top: 2px dotted var(--color-1);
+  border-bottom: 2px dotted var(--color-1);
+}
+.icons__container {
+  margin-top: 50px;
+  font-family: "Roboto Slab", serif;
+  gap: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-1);
+}
+.icon {
+  width: 60px;
+}
+
+.icon--location{
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px dotted var(--color-1);
+}
+.datos{
+  font-weight: 700;
+}
+@media (min-width: 576px){
+  
 }
